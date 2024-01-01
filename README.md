@@ -31,3 +31,17 @@ order by payment_date asc;
 ```
 
 ![image](https://github.com/Byzgaev-I/SQL.Part-1/blob/main/2.png)
+
+---
+
+### Задание 3
+
+Получите последние пять аренд фильмов.
+
+### Решение:
+
+```
+SELECT * FROM rental ORDER BY rental_date DESC LIMIT 5;
+```
+![image](https://github.com/Byzgaev-I/SQL.Part-1/blob/main/3.png)
+
