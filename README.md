@@ -45,3 +45,33 @@ SELECT * FROM rental ORDER BY rental_date DESC LIMIT 5;
 ```
 ![image](https://github.com/Byzgaev-I/SQL.Part-1/blob/main/3.png)
 
+---
+
+### Задание 4
+
+
+Одним запросом получите активных покупателей, имена которых Kelly или Willie.  
+Сформируйте вывод в результат таким образом:  
+- все буквы в фамилии и имени из верхнего регистра переведите в нижний регистр,  
+- замените буквы 'll' в именах на 'pp'.  
+
+### Решение:
+
+```
+SELECT   REPLACE(LOWER(first_name), 'll', 'pp') AS first_name,   REPLACE(LOWER(last_name), 'll', 'pp')   AS last_name FROM customer WHERE active = '1' AND (first_name IN ('KELLY', 'WILLIE'));
+```
+![image](https://github.com/Byzgaev-I/SQL.Part-1/blob/main/4.png)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+ 
